@@ -1,5 +1,6 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
+import { connect } from "react-redux";
 
 const CarouselIcon = ({ size = 14, name = "fa-chevron-circle-right" }) => (
   <div style={{ fontSize: `${size}px`, color: "black" }}>
@@ -7,50 +8,36 @@ const CarouselIcon = ({ size = 14, name = "fa-chevron-circle-right" }) => (
   </div>
 );
 
-export default function Banner() {
+function Banner({ banners }) {
   return (
     <Carousel
       interval={null}
       nextIcon={<CarouselIcon size={50} name="fa-chevron-circle-right" />}
       prevIcon={<CarouselIcon size={50} name="fa-chevron-circle-left" />}
     >
-      <Carousel.Item>
-        <img
-          className="d-block w-100 h-100 carousel-img-item"
-          src="/assets/banner-1.jpg"
-          alt="First slide"
-        />
-        <Carousel.Caption className="custom-caption">
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100 h-100 carousel-img-item"
-          src="/assets/banner-2.jpg"
-          alt="Third slide"
-        />
-
-        <Carousel.Caption className="custom-caption">
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100 h-100 carousel-img-item"
-          src="/assets/banner-3.jpg"
-          alt="Third slide"
-        />
-
-        <Carousel.Caption className="custom-caption">
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
+      {banners.map((banner, index) => {
+        return (
+          <Carousel.Item key={index}>
+            <img
+              className="d-block w-100 h-100 carousel-img-item"
+              src={banner.img}
+              alt={`slide ke-${index}`}
+            />
+            <Carousel.Caption className="custom-caption">
+              <h3>{banner.title}</h3>
+              <p>{banner.description}</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        );
+      })}
     </Carousel>
   );
 }
+
+const mapStateToProps = (state) => {
+  return {
+    banners: state.banners,
+  };
+};
+
+export default connect(mapStateToProps)(Banner);

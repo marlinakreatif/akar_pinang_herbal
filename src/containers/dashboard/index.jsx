@@ -6,6 +6,8 @@ import Products from "./SectionProducts";
 import Testimoni from "./SectionTestimoni";
 import "./dashboard.css";
 import ResponsiveMenu from "../../components/ResponsiveMenu";
+import { getDashboardContent } from "../../rx-actions/clientDashboard";
+import { connect } from "react-redux";
 
 class index extends Component {
   constructor(props) {
@@ -25,8 +27,7 @@ class index extends Component {
     if (isMoreThenHalve) {
       this.mainRef.current.scrollTop = clientHeight * scrollIndex;
     } else if (scrollIndex > 0) {
-      this.mainRef.current.scrollTop =
-        clientHeight * (scrollIndex - 1);
+      this.mainRef.current.scrollTop = clientHeight * (scrollIndex - 1);
     }
   };
 
@@ -71,6 +72,11 @@ class index extends Component {
       });
     }
   };
+
+  componentDidMount() {
+    this.props.getDashboardContent();
+  }
+
   render() {
     return (
       <>
@@ -110,4 +116,4 @@ class index extends Component {
   }
 }
 
-export default index;
+export default connect(null, { getDashboardContent })(index);
