@@ -6,6 +6,7 @@ export default class HomeClient extends Component {
     return (
       <div>
         <ResponsiveMenu type="client" />
+        <main style={{ height: "1000px" }}></main>
       </div>
     );
   }

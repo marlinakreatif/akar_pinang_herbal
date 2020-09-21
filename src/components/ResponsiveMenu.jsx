@@ -1,32 +1,33 @@
 import React from "react";
+import { Nav } from "react-bootstrap";
 import { connect } from "react-redux";
 import { CLIENT_MENU_ITEMS, ADMIN_MENU_ITEMS } from "../constants/menu";
+import NormalScreenMenuContainer from "./NormalScreenMenuContainer";
+import SmallScreenMenuContainer from "./SmallScreenMenuContainer";
 
 const renderMenuItems = (menuItems) => {
   return menuItems.map((menuItem, index) => {
     return (
-      <li key={`menu-item-${index}`}>
-        <span>{menuItem.title}</span>
-      </li>
+      <Nav.Link href={menuItem.path} key={`menu-item-${index}`}>
+        {menuItem.title}
+      </Nav.Link>
     );
   });
 };
 
 const NormalScreen = ({ menuItems }) => {
   return (
-    <div>
-      <span>Normal Screen</span>
+    <NormalScreenMenuContainer>
       {renderMenuItems(menuItems)}
-    </div>
+    </NormalScreenMenuContainer>
   );
 };
 
 const SmallScreen = ({ menuItems }) => {
   return (
-    <div>
-      <span>Small Screen</span>
+    <SmallScreenMenuContainer>
       {renderMenuItems(menuItems)}
-    </div>
+    </SmallScreenMenuContainer>
   );
 };
 

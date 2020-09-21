@@ -1,5 +1,36 @@
-*{
+* {
   box-sizing: border-box;
 }
 
+#main-header {
+  display: inline;
+}
 
+.jumbotron {
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  color: black;
+  margin-bottom: 0;
+}
+
+.bg-main {
+  background-color: #fcc200 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 300;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: underline;
+}
+
+#btnLogin {
+  width: 125px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fcc200;
+}
