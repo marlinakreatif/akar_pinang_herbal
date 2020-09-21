@@ -6,7 +6,6 @@ function Biografi({ biografi }) {
   if (!biografi) {
     return <span>loading....</span>;
   }
-  console.log(biografi);
   return (
     <div className="section-padd">
       <div className="container">
