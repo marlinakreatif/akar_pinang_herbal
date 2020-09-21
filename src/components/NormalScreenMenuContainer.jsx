@@ -4,7 +4,7 @@ import { Button, Form, Nav, Navbar } from "react-bootstrap";
 function NormalScreenMenuContainer({ children }) {
   return (
     <header id="main-header">
-      <div class="jumbotron text-center">
+      <div className="jumbotron text-center">
         <img src="/assets/brand.png" alt="brand" height="100" />{" "}
       </div>
       <Navbar bg="main" expand="md" sticky="top" variant="dark">
