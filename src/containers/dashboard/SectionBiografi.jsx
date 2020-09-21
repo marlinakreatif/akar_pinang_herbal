@@ -1,7 +1,12 @@
 import React from "react";
 import { Media } from "react-bootstrap";
+import { connect } from "react-redux";
 
-export default function Biografi(props) {
+function Biografi({ biografi }) {
+  if (!biografi) {
+    return <span>loading....</span>;
+  }
+  console.log(biografi);
   return (
     <div className="section-padd">
       <div className="container">
@@ -12,18 +17,12 @@ export default function Biografi(props) {
                 width={300}
                 height={400}
                 className="mr-3"
-                src="/assets/biografi.png"
+                src={biografi.profile_picture}
                 alt="Generic placeholder"
               />
               <Media.Body>
-                <h1>Biografi H. Andi Muhammad</h1>
-                <p>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                  scelerisque ante sollicitudin commodo. Cras purus odio,
-                  vestibulum in vulputate at, tempus viverra turpis. Fusce
-                  condimentum nunc ac nisi vulputate fringilla. Donec lacinia
-                  congue felis in faucibus.
-                </p>
+                <h1>{`Biografi ${biografi.name}`}</h1>
+                <p>{biografi.history}</p>
               </Media.Body>
             </Media>
           </div>
@@ -32,3 +31,11 @@ export default function Biografi(props) {
     </div>
   );
 }
+
+const mapStateToProps = (state) => {
+  return {
+    biografi: state.biografi,
+  };
+};
+
+export default connect(mapStateToProps)(Biografi);

@@ -1,4 +1,4 @@
-import { GET_BANNERS } from "../constants/types";
+import { GET_BANNERS, GET_BIOGRAFI } from "../constants/types";
 
 export const getAllBanner = () => {
   const banners = [
@@ -25,6 +25,21 @@ export const getAllBanner = () => {
   };
 };
 
+export const getBiografi = () => {
+  const biografi = {
+    name: "H. Andi Muhammad",
+    history:
+      "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.",
+    profile_picture: "/assets/biografi.png",
+  };
+
+  return {
+    type: GET_BIOGRAFI,
+    payload: biografi,
+  };
+};
+
 export const getDashboardContent = () => (dispatch, getState) => {
   dispatch(getAllBanner());
+  dispatch(getBiografi());
 };
