@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { setMobileScreen } from "../rx-actions/dimension";
+import { CLIENT_HOME, ADMIN_HOME } from "../constants/path";
 import HomeAdmin from "./HomeAdmin";
 import HomeClient from "./HomeClient";
 
@@ -24,12 +25,11 @@ class App extends Component {
   };
 
   render() {
-    console.log("CURRENT STATE VALUE :", this.props.isMobile);
     return (
       <Router>
         <Switch>
-          <Route path="/" component={HomeClient} />
-          <Route path="/admin" component={HomeAdmin} />
+          <Route path={CLIENT_HOME} component={HomeClient} exact/>
+          <Route path={ADMIN_HOME} component={HomeAdmin} />
         </Switch>
       </Router>
     );
