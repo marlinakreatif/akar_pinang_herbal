@@ -1,12 +1,16 @@
 import React, { Component } from "react";
 import ResponsiveMenu from "../components/ResponsiveMenu";
+import Dashboard from "./dashboard";
 
 export default class HomeClient extends Component {
+  constructor(props) {
+    super(props);
+    this.ref = React.createRef;
+  }
   render() {
     return (
-      <div>
-        <ResponsiveMenu type="client" />
-        <main style={{ height: "1000px" }}></main>
+      <div id="home-body">
+        <Dashboard />
       </div>
     );
   }

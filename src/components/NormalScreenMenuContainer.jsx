@@ -5,7 +5,7 @@ function NormalScreenMenuContainer({ children }) {
   return (
     <header id="main-header">
       <div className="jumbotron text-center">
-        <img src="/assets/brand.png" alt="brand" height="100" />{" "}
+        <img src="/assets/brand.png" alt="brand" height="75" />
       </div>
       <Navbar bg="main" expand="md" sticky="top" variant="dark">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

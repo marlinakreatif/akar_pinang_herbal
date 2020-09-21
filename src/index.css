@@ -7,7 +7,7 @@
 }
 
 .jumbotron {
-  padding: 20px;
+  padding: 10px;
   background-size: cover;
   background-position: center;
   text-align: left;
@@ -33,4 +33,88 @@
   font-size: 14px;
   font-weight: bold;
   color: #fcc200;
+}
+
+/* START COMPONENTS 
+==>  LINE
+"blue" | "black" | "white" | "green" | "red"
+*/
+h1.line {
+  padding: 0 30px;
+  text-align: center;
+  position: relative;
+}
+h1.line.black {
+  color: rgb(102, 102, 102);
+}
+h1.line.white {
+  color: white;
+}
+h1.line.red {
+  color: red;
+}
+h1.line.green {
+  color: green;
+}
+h1.line.blue {
+  color: blue;
+}
+h1.line.gold {
+  color: gold;
+}
+
+h1.line::before {
+  content: "";
+  width: 22%;
+  height: 2px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+h1.line::after {
+  content: "";
+  width: 25%;
+  height: 2px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+h1.line.black::after,
+h1.line.black::before {
+  background: rgb(102, 102, 102);
+}
+h1.line.white::after,
+h1.line.white::before {
+  background: white;
+}
+h1.line.blue::after,
+h1.line.blue::before {
+  background: blue;
+}
+h1.line.red::after,
+h1.line.red::before {
+  background: red;
+}
+h1.line.green::after,
+h1.line.green::before {
+  background: green;
+}
+
+h1.line.gold::after,
+h1.line.gold::before {
+  background: gold;
+}
+
+.carousel-img-item {
+  max-height: 100vh;
+}
+
+.section-padd {
+  padding: 20px;
+  padding-top: 75px;
 }
