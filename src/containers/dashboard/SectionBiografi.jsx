@@ -20,7 +20,9 @@ function Biografi({ biografi }) {
                 alt="Generic placeholder"
               />
               <Media.Body>
-                <h1>{`Biografi ${biografi.name}`}</h1>
+                <h1
+                  style={{ fontFamily: "share-italic" }}
+                >{`Biografi ${biografi.name}`}</h1>
                 <p>{biografi.history}</p>
               </Media.Body>
             </Media>

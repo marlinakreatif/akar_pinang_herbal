@@ -32,7 +32,6 @@ const SmallScreen = ({ menuItems }) => {
 };
 
 function ResponsiveMenu(props) {
-  console.log(props);
   let menuItems = props.type === "admin" ? ADMIN_MENU_ITEMS : CLIENT_MENU_ITEMS;
   if (props.isMobile) {
     return <SmallScreen menuItems={menuItems} />;

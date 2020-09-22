@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "share-italic";
+  src: url("/fonts/Share-Italic.ttf");
+}
+
 #main-header {
   display: inline;
 }
@@ -39,33 +44,35 @@
 ==>  LINE
 "blue" | "black" | "white" | "green" | "red"
 */
-h1.line {
+.line {
   padding: 0 30px;
   text-align: center;
   position: relative;
+  font-family: "share-italic";
+  font-style: italic;
 }
-h1.line.black {
+.line.black {
   color: rgb(102, 102, 102);
 }
-h1.line.white {
+.line.white {
   color: white;
 }
-h1.line.red {
+.line.red {
   color: red;
 }
-h1.line.green {
+.line.green {
   color: green;
 }
-h1.line.blue {
+.line.blue {
   color: blue;
 }
-h1.line.gold {
+.line.gold {
   color: gold;
 }
 
-h1.line::before {
+.line::before {
   content: "";
-  width: 22%;
+  width: 35%;
   height: 2px;
   background: black;
   position: absolute;
@@ -73,9 +80,9 @@ h1.line::before {
   left: 0;
   transform: translateY(-50%);
 }
-h1.line::after {
+.line::after {
   content: "";
-  width: 25%;
+  width: 35%;
   height: 2px;
   background: black;
   position: absolute;
@@ -84,29 +91,29 @@ h1.line::after {
   transform: translateY(-50%);
 }
 
-h1.line.black::after,
-h1.line.black::before {
+.line.black::after,
+.line.black::before {
   background: rgb(102, 102, 102);
 }
-h1.line.white::after,
-h1.line.white::before {
+.line.white::after,
+.line.white::before {
   background: white;
 }
-h1.line.blue::after,
-h1.line.blue::before {
+.line.blue::after,
+.line.blue::before {
   background: blue;
 }
-h1.line.red::after,
-h1.line.red::before {
+.line.red::after,
+.line.red::before {
   background: red;
 }
-h1.line.green::after,
-h1.line.green::before {
+.line.green::after,
+.line.green::before {
   background: green;
 }
 
-h1.line.gold::after,
-h1.line.gold::before {
+.line.gold::after,
+.line.gold::before {
   background: gold;
 }
 
