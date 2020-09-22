@@ -100,10 +100,41 @@
   float: right;
 }
 
-.product-container .right .card-header{
-  font-family: 'share';
+.product-container .right .card-header {
+  font-family: "share";
 }
 
 .carousel-indicators li {
   background-color: rgb(0, 0, 0);
+}
+
+.news {
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.news .card-header {
+  height: 100px;
+}
+
+.news .card-body {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.news .card-body p {
+  text-indent: 50px;
+}
+
+.news .card-body img {
+  width: 100%;
+  max-height: 100px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 15px;
+}
+
+.news .card-header,
+.new .card-footer {
+  border: none;
+  background-color: unset;
 }

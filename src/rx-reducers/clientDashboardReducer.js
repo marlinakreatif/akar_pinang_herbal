@@ -1,4 +1,9 @@
-import { GET_BANNERS, GET_BIOGRAFI, GET_PRODUCTS } from "../constants/types";
+import {
+  GET_BANNERS,
+  GET_BIOGRAFI,
+  GET_PRODUCTS,
+  GET_NEWS,
+} from "../constants/types";
 
 export const getAllBannerReducer = (state = [], action) => {
   switch (action.type) {
@@ -13,6 +18,16 @@ export const getAllBannerReducer = (state = [], action) => {
 export const getAllProductReducer = (state = [], action) => {
   switch (action.type) {
     case GET_PRODUCTS:
+      return action.payload;
+
+    default:
+      return state;
+  }
+};
+
+export const getAllNewsReducer = (state = [], action) => {
+  switch (action.type) {
+    case GET_NEWS:
       return action.payload;
 
     default:

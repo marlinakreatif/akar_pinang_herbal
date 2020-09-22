@@ -37,9 +37,9 @@
   width: 125px;
   font-size: 14px;
   font-weight: bold;
-  background-color: #fad14a;
+  background-color: #fad14ac7;
   color: white;
-  transition: background-color 0.5s ease;
+  transition: background-color 1s ease;
 }
 
 .btn-main:hover {

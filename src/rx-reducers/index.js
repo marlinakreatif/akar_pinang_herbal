@@ -4,6 +4,7 @@ import {
   getAllBannerReducer,
   getBiografiReducer,
   getAllProductReducer,
+  getAllNewsReducer,
 } from "./clientDashboardReducer";
 
 export default combineReducers({
@@ -11,4 +12,5 @@ export default combineReducers({
   banners: getAllBannerReducer,
   biografi: getBiografiReducer,
   products: getAllProductReducer,
+  news: getAllNewsReducer,
 });
