@@ -10,7 +10,7 @@ class SmallScreenMenuContainer extends Component {
     const { children } = this.props;
     return (
         <header id="main-header">
-        <Navbar bg="main" expand="lg" variant="dark">
+        <Navbar bg="main" expand="lg" sticky="top" variant="dark">
           <Navbar.Brand href="#home">
             <img src="/favicon.png" alt="brand" height="50" />{" "}
             {" Akar Pinang Herbal"}
