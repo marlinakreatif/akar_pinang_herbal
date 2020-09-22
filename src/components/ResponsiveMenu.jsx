@@ -1,16 +1,21 @@
 import React from "react";
-import { Nav } from "react-bootstrap";
 import { connect } from "react-redux";
 import { CLIENT_MENU_ITEMS, ADMIN_MENU_ITEMS } from "../constants/menu";
+import { NavLink } from "react-router-dom";
 import NormalScreenMenuContainer from "./NormalScreenMenuContainer";
 import SmallScreenMenuContainer from "./SmallScreenMenuContainer";
 
 const renderMenuItems = (menuItems) => {
   return menuItems.map((menuItem, index) => {
     return (
-      <Nav.Link href={menuItem.path} key={`menu-item-${index}`}>
+      <NavLink
+        className="nav-link"
+        activeClassName="active"
+        to={menuItem.path}
+        key={`menu-item-${index}`}
+      >
         {menuItem.title}
-      </Nav.Link>
+      </NavLink>
     );
   });
 };

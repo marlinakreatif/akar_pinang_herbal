@@ -100,3 +100,8 @@
   padding: 20px;
   padding-top: 75px;
 }
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: red;
+  font-weight: bold;
+}
