@@ -3,8 +3,8 @@
 }
 
 @font-face {
-  font-family: "share-italic";
-  src: url("/fonts/Share-Italic.ttf");
+  font-family: "share";
+  src: url("/fonts/Share-Italic.ttf") format("ttf");
 }
 
 #main-header {
@@ -33,6 +33,20 @@
   text-decoration: underline;
 }
 
+.btn-main {
+  width: 125px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #fad14a;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+.btn-main:hover {
+  background-color: #ffc400;
+  color: white;
+}
+
 #btnLogin {
   width: 125px;
   font-size: 14px;
@@ -48,33 +62,18 @@
   padding: 0 30px;
   text-align: center;
   position: relative;
-  font-family: "share-italic";
+  font-family: "share";
   font-style: italic;
-}
-.line.black {
-  color: rgb(102, 102, 102);
-}
-.line.white {
-  color: white;
-}
-.line.red {
-  color: red;
-}
-.line.green {
-  color: green;
-}
-.line.blue {
-  color: blue;
-}
-.line.gold {
-  color: gold;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .line::before {
   content: "";
   width: 35%;
   height: 2px;
-  background: black;
+  height: 7px;
+  background-color: rgba(0, 0, 0, 0.719);
   position: absolute;
   top: 50%;
   left: 0;
@@ -83,38 +82,14 @@
 .line::after {
   content: "";
   width: 35%;
-  height: 2px;
-  background: black;
+  height: 50px;
+  background-repeat: repeat-x;
+  height: 7px;
+  background-color: rgba(0, 0, 0, 0.719);
   position: absolute;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-}
-
-.line.black::after,
-.line.black::before {
-  background: rgb(102, 102, 102);
-}
-.line.white::after,
-.line.white::before {
-  background: white;
-}
-.line.blue::after,
-.line.blue::before {
-  background: blue;
-}
-.line.red::after,
-.line.red::before {
-  background: red;
-}
-.line.green::after,
-.line.green::before {
-  background: green;
-}
-
-.line.gold::after,
-.line.gold::before {
-  background: gold;
 }
 
 .carousel-img-item {

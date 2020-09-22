@@ -8,6 +8,7 @@ function Biografi({ biografi }) {
   }
   return (
     <div className="section-padd">
+      <h2 className="line black">Biografi</h2>
       <div className="container">
         <div className="row">
           <div className="col-10 offset-1">
@@ -22,7 +23,7 @@ function Biografi({ biografi }) {
               <Media.Body>
                 <h1
                   style={{ fontFamily: "share-italic" }}
-                >{`Biografi ${biografi.name}`}</h1>
+                >{` ${biografi.name}`}</h1>
                 <p>{biografi.history}</p>
               </Media.Body>
             </Media>

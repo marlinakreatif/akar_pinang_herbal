@@ -6,16 +6,16 @@
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .main-container::-webkit-scrollbar {
-    display: none;
-  }
+  display: none;
+}
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .main-container {
   height: 100vh;
   overflow: scroll;
   scroll-behavior: smooth;
-  -ms-overflow-style: none; 
-  scrollbar-width: none;   
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .section-button {
@@ -63,4 +63,47 @@
   -webkit-box-shadow: 2px 2px 5px 0px rgba(115, 115, 115, 1);
   -moz-box-shadow: 2px 2px 5px 0px rgba(115, 115, 115, 1);
   box-shadow: 2px 2px 5px 0px rgba(115, 115, 115, 1);
+}
+
+.product-container {
+  width: 100%;
+  height: 80vh;
+  padding: 50px 100px;
+  overflow: auto;
+}
+.product-caption {
+  color: black;
+}
+
+.product-container .left,
+.product-container .right {
+  display: inline-block;
+  height: 300px;
+}
+
+.product-container .left {
+  width: 40%;
+  float: left;
+  padding: 0 20px;
+}
+
+.product-container .left img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px 0 rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+  object-position: top;
+}
+.product-container .right {
+  width: 60%;
+  float: right;
+}
+
+.product-container .right .card-header{
+  font-family: 'share';
+}
+
+.carousel-indicators li {
+  background-color: rgb(0, 0, 0);
 }

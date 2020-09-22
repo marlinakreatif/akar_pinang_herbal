@@ -1,12 +1,7 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
 import { connect } from "react-redux";
-
-const CarouselIcon = ({ size = 14, name = "fa-chevron-circle-right" }) => (
-  <div style={{ fontSize: `${size}px`, color: "black" }}>
-    <i className={`fa ${name}`}></i>
-  </div>
-);
+import CarouselIcon from "../../components/CarouselIcon";
 
 function Banner({ banners }) {
   return (
