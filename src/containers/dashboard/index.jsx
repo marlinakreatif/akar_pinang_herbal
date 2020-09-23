@@ -8,6 +8,7 @@ import "./dashboard.css";
 import ResponsiveMenu from "../../components/ResponsiveMenu";
 import { getDashboardContent } from "../../rx-actions/clientDashboard";
 import { connect } from "react-redux";
+import StickyFooter from "../../components/StickyFooter";
 
 class index extends Component {
   constructor(props) {
@@ -79,30 +80,28 @@ class index extends Component {
 
   render() {
     return (
-      <>
-        <div
-          className="main-container"
-          ref={this.mainRef}
-          onScroll={this.onScroll}
-        >
-          <ResponsiveMenu type="client" />
-          <section className="section" id="section-0">
-            <Banner />
-          </section>
-          <section className="section" id="section-1">
-            <Biografi />
-          </section>
-          <section className="section" id="section-2">
-            <Products />
-          </section>
-          <section className="section" id="section-3">
-            <News />
-          </section>
-          <section className="section" id="section-4">
-            <Testimoni />
-          </section>
-        </div>
-
+      <div
+        className="main-container"
+        ref={this.mainRef}
+        onScroll={this.onScroll}
+      >
+        <ResponsiveMenu type="client" />
+        <section className="section" id="section-0">
+          <Banner />
+        </section>
+        <section className="section" id="section-1">
+          <Biografi />
+        </section>
+        <section className="section" id="section-2">
+          <Products />
+        </section>
+        <section className="section" id="section-3">
+          <News />
+        </section>
+        <section className="section" id="section-4">
+          <Testimoni />
+        </section>
+        <StickyFooter />
         <div className="section-button">
           <div id="up" onClick={this.scrollUp}>
             <i className="fa fa-chevron-up" aria-hidden="true"></i>
@@ -111,7 +110,7 @@ class index extends Component {
             <i className="fa fa-chevron-down" aria-hidden="true"></i>
           </div>
         </div>
-      </>
+      </div>
     );
   }
 }
