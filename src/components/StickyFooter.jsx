@@ -1,5 +1,4 @@
 import React from "react";
-import { Button, Form, Nav, Navbar } from "react-bootstrap";
 
 function StickyFooter() {
   return (

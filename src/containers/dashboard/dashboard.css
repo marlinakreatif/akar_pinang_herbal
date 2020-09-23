@@ -100,13 +100,29 @@
   width: 60%;
   float: right;
 }
+.product-container .card{
+  padding-right: 30px;
+}
+.product-container .card-body {
+  overflow-y: scroll;
+  height: 200px;
+}
+
+.product-container .card-header,
+.product-container .card-footer {
+  border: unset;
+  background-color: white;
+}
 
 .product-container .right .card-header {
   font-family: "share";
 }
 
 .carousel-indicators li {
-  background-color: rgb(0, 0, 0);
+  background-color: #5ebd00;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
 }
 
 .news {
@@ -160,9 +176,9 @@
 }
 
 .news .card-header,
-.new .card-footer,
+.news .card-footer,
 .testimoni .card-header,
 .testimoni .card-footer {
   border: none;
-  background-color: unset;
+  background-color: white;
 }

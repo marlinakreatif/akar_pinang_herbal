@@ -19,17 +19,19 @@ function Products({ products }) {
                 <div className="left">
                   <img src={product.picture} alt={`slide ke-${index}`} />
                 </div>
-                <div className="right card ">
-                  <div className="card-header">
-                    <h3>{product.productName}</h3>
-                  </div>
-                  <div className="card-body">
-                    <p>{product.description}</p>
-                  </div>
-                  <div className="card-footer">
-                    <Button variant="light" className="btn-main" size="sm">
-                      Detail Produk
-                    </Button>
+                <div className="right ">
+                  <div className="card">
+                    <div className="card-header">
+                      <h3>{product.productName}</h3>
+                    </div>
+                    <div className="card-body">
+                      <p>{product.description}</p>
+                    </div>
+                    <div className="card-footer">
+                      <Button variant="light" className="btn-main" size="sm">
+                        Detail Produk
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -13,5 +13,15 @@
         "title": "Third Slide Label",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "img": "/assets/banner-3.jpg"
+    },
+    {
+        "title": "Fourth slide label",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "img": "/assets/banner-5.jpg"
+    },
+    {
+        "title": "Fifth Slide Label",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "img": "/assets/banner-4.jpg"
     }
 ]

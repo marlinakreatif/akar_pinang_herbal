@@ -6,7 +6,6 @@ import CarouselIcon from "../../components/CarouselIcon";
 function Banner({ banners }) {
   return (
     <Carousel
-      interval={null}
       nextIcon={<CarouselIcon size={50} name="fa-chevron-circle-right" />}
       prevIcon={<CarouselIcon size={50} name="fa-chevron-circle-left" />}
     >

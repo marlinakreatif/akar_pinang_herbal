@@ -34,6 +34,7 @@ const renderCarouselItem = (testimoni_comment) => {
       <Carousel.Item key={index}>
         <div
           className="row justify-content-center"
+          style={{ minHeight: "70vh",padding:"20px 125px" }}
           dangerouslySetInnerHTML={{ __html: column }}
         ></div>
       </Carousel.Item>
