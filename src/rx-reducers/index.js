@@ -5,6 +5,7 @@ import {
   getBiografiReducer,
   getAllProductReducer,
   getAllNewsReducer,
+  getTestimoniReducer,
 } from "./clientDashboardReducer";
 
 export default combineReducers({
@@ -13,4 +14,5 @@ export default combineReducers({
   biografi: getBiografiReducer,
   products: getAllProductReducer,
   news: getAllNewsReducer,
+  testimoni_comment: getTestimoniReducer,
 });

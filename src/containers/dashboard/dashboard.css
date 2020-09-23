@@ -132,9 +132,36 @@
   object-position: center;
   margin-bottom: 15px;
 }
+.testimoni {
+  text-align: center;
+}
+.testimoni .card-body img {
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 20px;
+}
+
+.testimoni .card-body p {
+  text-align: justify;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.testimoni .card-header {
+  font-size: 24px;
+  font-family: "share";
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+}
 
 .news .card-header,
-.new .card-footer {
+.new .card-footer,
+.testimoni .card-header,
+.testimoni .card-footer {
   border: none;
   background-color: unset;
 }

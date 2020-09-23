@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Rasyid",
+        "comment": "Terimakasih Akar Pinang Herbal , Dengan menggunakan herbal ini tubuh semakin sehat",
+        "picture": "/assets/alucard.png"
+    },
+    {
+        "id": 2,
+        "name": "Fariz",
+        "comment": "Terimakasih Akar Pinang Herbal , Dengan menggunakan herbal ini tubuh semakin sehat",
+        "picture": "/assets/alucard.png"
+    },
+    {
+        "id": 3,
+        "name": "Iqbal",
+        "comment": "Terimakasih Akar Pinang Herbal , Dengan menggunakan herbal ini tubuh semakin sehat",
+        "picture": "/assets/alucard.png"
+    },
+    {
+        "id": 4,
+        "name": "Andry",
+        "comment": "Terimakasih Akar Pinang Herbal , Dengan menggunakan herbal ini tubuh semakin sehat",
+        "picture": "/assets/alucard.png"
+    },
+    {
+        "id": 5,
+        "name": "Kilua",
+        "comment": "Terimakasih Akar Pinang Herbal , Dengan menggunakan herbal ini tubuh semakin sehat",
+        "picture": "/assets/alucard.png"
+    },
+    {
+        "id": 6,
+        "name": "Gon",
+        "comment": "Terimakasih Akar Pinang Herbal , Dengan menggunakan herbal ini tubuh semakin sehat",
+        "picture": "/assets/alucard.png"
+    },
+    {
+        "id": 7,
+        "name": "Saber",
+        "comment": "Terimakasih Akar Pinang Herbal , Dengan menggunakan herbal ini tubuh semakin sehat",
+        "picture": "/assets/alucard.png"
+    },
+    {
+        "id": 8,
+        "name": "Alucard",
+        "comment": "Terimakasih Akar Pinang Herbal , Dengan menggunakan herbal ini tubuh semakin sehat",
+        "picture": "/assets/alucard.png"
+    }
+]
