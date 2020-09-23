@@ -1,12 +1,13 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import { connect } from "react-redux";
+
 function News({ news }) {
   return (
     <div className="section-padd">
       <h2 className="line black">News</h2>
       <div className="container">
-        <div className="row">
+        <div className="row" >
           {news.slice(0, 3).map((data, index) => {
             return (
               <div className="col-4" key={index}>

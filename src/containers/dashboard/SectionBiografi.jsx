@@ -9,27 +9,14 @@ function Biografi({ biografi }) {
   return (
     <div className="section-padd">
       <h2 className="line black">Biografi</h2>
-      <div className="container">
-        <div className="row">
-          <div className="col-10 offset-1">
-            <Media>
-              <img
-                width={300}
-                height={400}
-                className="mr-3"
-                src={biografi.profile_picture}
-                alt="Generic placeholder"
-              />
-              <Media.Body>
-                <h1
-                  style={{ fontFamily: "share-italic" }}
-                >{` ${biografi.name}`}</h1>
-                <p>{biografi.history}</p>
-              </Media.Body>
-            </Media>
-          </div>
-        </div>
-      </div>
+
+      <Media className="biografi-media">
+        <img src={biografi.profile_picture} alt="Generic placeholder" />
+        <Media.Body>
+          <h4>{biografi.name}</h4>
+          <p>{biografi.history}</p>
+        </Media.Body>
+      </Media>
     </div>
   );
 }

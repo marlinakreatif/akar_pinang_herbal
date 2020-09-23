@@ -1,6 +1,6 @@
 .section {
   width: 100%;
-  height: 100vh;
+  min-height: 50vh;
   display: block;
 }
 
@@ -24,6 +24,12 @@
   bottom: 15px;
   right: 15px;
   z-index: 100;
+}
+
+.banner-img {
+  max-height: 450px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .section-button > #up,
@@ -57,7 +63,7 @@
   left: unset !important;
   color: gray !important;
   width: 400px;
-  height: 400px;
+  height: 250px;
   background: rgba(255, 255, 255, 0.849);
   border-radius: 10px;
   padding: 15px;
@@ -68,9 +74,8 @@
 
 .product-container {
   width: 100%;
-  height: 80vh;
-  padding: 50px 100px;
-  overflow: auto;
+  min-height: 80vh;
+  padding: 50px 100px 0 100px;
 }
 .product-caption {
   color: black;
@@ -79,12 +84,12 @@
 .product-container .left,
 .product-container .right {
   display: inline-block;
-  height: 300px;
 }
 
 .product-container .left {
   width: 40%;
   float: left;
+  height: 300px;
   padding: 0 20px;
 }
 
@@ -92,7 +97,6 @@
   width: 100%;
   height: 100%;
   border-radius: 5px;
-  box-shadow: 0px 1px 5px 0 rgba(0, 0, 0, 0.5);
   object-fit: cover;
   object-position: top;
 }
@@ -100,32 +104,36 @@
   width: 60%;
   float: right;
 }
-.product-container .card{
+.product-container .card {
   padding-right: 30px;
 }
 .product-container .card-body {
-  overflow-y: scroll;
-  height: 200px;
+  font-size: 14px;
+  text-indent: 25px;
+  text-align: justify;
 }
-
-.product-container .card-header,
-.product-container .card-footer {
+.product-container .right .card,
+.product-container .right .card-header,
+.product-container .right .card-footer {
   border: unset;
   background-color: white;
 }
 
 .product-container .right .card-header {
   font-family: "share";
+  font-size: 24px;
+  padding: 10px;
 }
 
 .carousel-indicators li {
-  background-color: #5ebd00;
+  background-color: #7fb830;
   height: 15px;
   width: 15px;
   border-radius: 50%;
 }
 
 .news {
+  margin-top: 50px;
   margin-bottom: 20px;
   padding: 15px;
 }
@@ -181,4 +189,30 @@
 .testimoni .card-footer {
   border: none;
   background-color: white;
+}
+
+.biografi-media {
+  padding: 75px 200px;
+}
+
+.biografi-media img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  margin-right: 50px;
+}
+.biografi-media h4 {
+  font-family: share;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.biografi-media .media-body {
+  padding-top: 50px;
+}
+.biografi-media .media-body p {
+  text-indent: 50px;
+  text-align: justify;
+  padding-top: 20px;
 }

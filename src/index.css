@@ -4,7 +4,13 @@
 
 @font-face {
   font-family: "share";
-  src: url("/fonts/Share-Italic.ttf") format("ttf");
+  src: local("share"), url("./fonts/share/Share-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "roboto";
+  src: local("roboto"),
+    url("./fonts/roboto/Roboto-Regular.ttf") format("truetype");
 }
 
 #main-header {
@@ -17,11 +23,13 @@
   background-position: center;
   text-align: left;
   color: black;
-  margin-bottom: 0;
+  margin-bottom: -3px;
+  border-radius: 0px;
+
 }
 
 .bg-main {
-  background-color: #fcc200 !important;
+  background-color: #7fb830 !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -37,13 +45,13 @@
   width: 125px;
   font-size: 14px;
   font-weight: bold;
-  background-color: #fad14ac7;
+  background-color: #c1fc6f;
   color: white;
   transition: background-color 1s ease;
 }
 
 .btn-main:hover {
-  background-color: #ffc400;
+  background-color: #7fb830;
   color: white;
 }
 
@@ -51,7 +59,8 @@
   width: 125px;
   font-size: 14px;
   font-weight: bold;
-  color: #fcc200;
+  color: #7fb830;
+  font-family: roboto;
 }
 
 /* START COMPONENTS 
@@ -63,7 +72,6 @@
   text-align: center;
   position: relative;
   font-family: "share";
-  font-style: italic;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -72,7 +80,7 @@
   content: "";
   width: 35%;
   height: 2px;
-  height: 7px;
+  height: 5px;
   background-color: rgba(0, 0, 0, 0.719);
   position: absolute;
   top: 50%;
@@ -84,7 +92,7 @@
   width: 35%;
   height: 50px;
   background-repeat: repeat-x;
-  height: 7px;
+  height: 5px;
   background-color: rgba(0, 0, 0, 0.719);
   position: absolute;
   top: 50%;
@@ -92,24 +100,18 @@
   transform: translateY(-50%);
 }
 
-.carousel-img-item {
-  max-height: 100vh;
-}
-
 .section-padd {
   padding: 20px;
-  padding-top: 75px;
+  padding-top: 50px;
 }
 
-.navbar-dark .navbar-nav .nav-link{
-  font-family: 'share';
+.navbar-dark .navbar-nav .nav-link {
+  font-family: "roboto";
+  font-size: 15px;
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
-  font-size: 16px;
-  text-decoration: underline;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
 .footer-main {
@@ -122,3 +124,13 @@
   font-weight: bold;
   padding-right: 50px;
 }
+
+.nav-span-cstm {
+  display: inline-block;
+  padding-bottom: 1px;
+}
+.active .nav-span-cstm {
+  border-bottom: 2px solid white;
+}
+
+

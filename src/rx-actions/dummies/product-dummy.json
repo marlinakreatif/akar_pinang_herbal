@@ -4,34 +4,34 @@
         "productName": "JAMU BERAS KENCUR",
         "description": "Jamu beras kencur berkhasiat dapat menghilangkan pegal-pegal pada tubuh dan sebagai tonikom atau penyegar saat habis bekerja. Dengan membiasakan minum jamu beras kencur, tubuh akan terhindar dari pegal-pegal dan linu yang biasa timbul bila bekerja terlalu payah. Selain itu, beras kencur bisa meringankan batuk dan merupakan seduhan yang tepat untuk jamu batuk.",
         "price": "50000",
-        "picture": "/assets/beras-kencur.jpeg"
+        "picture": "/assets/obat.png"
     },
     {
         "id": 2,
         "productName": "JAMU CABE PUYANG",
         "description": "Jamu cabe puyang dikatakan oleh sebagian besar penjual jamu sebagai jamu 'pegal linu'. Artinya, untuk menghilangkan cikalen, pegal, dan linu-linu di tubuh, terutama pegal-pegal di pinggang. Namun, ada pula yang mengatakan untuk menghilangkan dan menghindarkan kesemutan, menghilangkan keluhan badan panas dingin atau demam. Seorang penjual mengatakan minuman ini baik diminum oleh ibu yang sedang hamil tua dan bayi yang lahir jika minum jamu cabe puyang secara teratur tiap hari bayi akan bersih dan bau tidak amis. Jamu cabe puyang banyak mengandung zat besi dan berkasiat untuk menambah butiran darah merah bagi yang kurang darah atau anemia.",
         "price": "45000",
-        "picture": "/assets/cabe-puyang.jpeg"
+        "picture": "/assets/obat.png"
     },
     {
         "id": 3,
         "productName": "JAMU KUDU LAOS",
         "description": "Menurut sebagian besar penjual jamu, khasiat jamu kudu laos adalah untuk menurunkan tekanan darah. Tetapi, ada pula yang mengatakan untuk melancarkan peredaran darah, menghangatkan badan, membuat perut terasa nyaman, menambah nafsu makan, melancarkan haid, dan menyegarkan badan.",
         "price": "25000",
-        "picture": "/assets/kudu-laos.jpeg"
+        "picture": "/assets/obat.png"
     },
     {
         "id": 4,
         "productName": "JAMU KUNYIT ASEM",
-        "description": "Jamu Kunir asem dikatakan oleh sebagian besar penjual jamu sebagai jamu 'adem-ademan atau seger-segeran' yang dapat diartikan sebagai jamu untuk menyegarkan tubuh atau dapat membuat tubuh menjadi dingin. Ada pula yang mengatakan bermanfaat untuk menghindarkan dari panas dalam atau sariawan, serta membuat perut menjadi dingin. Seorang penjual jamu mengatakan bahwa jamu jenis ini tidak baik dikonsumsi oleh ibu yang sedang hamil muda sehubungan dengan sifatnya yang memperlancar haid. Ada pula penjual jamu yang menganjurkan minum jamu kunir asam untuk melancarkan haid.",
+        "description": "Jamu Kunir asem dikatakan oleh sebagian besar penjual jamu sebagai jamu 'adem-ademan atau seger-segeran' yang dapat diartikan sebagai jamu untuk menyegarkan tubuh atau dapat membuat tubuh menjadi dingin. Ada pula yang mengatakan bermanfaat untuk menghindarkan dari panas dalam atau sariawan, serta membuat perut menjadi dingin. Seorang penjual jamu mengatakan bahwa jamu jenis ini tidak baik dikonsumsi oleh ibu yang sedang hamil muda sehubungan dengan sifatnya yang memperlancar haid. ",
         "price": "30000",
-        "picture": "/assets/kunyit-asem.jpeg"
+        "picture": "/assets/obat.png"
     },
     {
         "id": 5,
         "productName": "JAMU SINOM",
         "description": "Manfaat, bahan penyusun, serta cara pembuatan jamu sinom tidak banyak berbeda dengan jamu kunir asam. Perbedaan hanya terletak pada tambahan bahan sinom. Bahkan, beberapa penjual tidak menambahkan sinom, tetapi dengan cara mengencerkan jamu kunir asam dengan mengurangi jumlah bahan baku yang selanjutnya ditambahkan gula secukupnya.",
         "price": "75000",
-        "picture": "/assets/sinom.jpeg"
+        "picture": "/assets/obat.png"
     }
 ]

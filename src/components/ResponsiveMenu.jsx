@@ -14,7 +14,7 @@ const renderMenuItems = (menuItems) => {
         to={menuItem.path}
         key={`menu-item-${index}`}
       >
-        {menuItem.title}
+        <span className="nav-span-cstm">{menuItem.title}</span>
       </NavLink>
     );
   });

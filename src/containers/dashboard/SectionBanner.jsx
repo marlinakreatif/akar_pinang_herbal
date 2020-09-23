@@ -13,7 +13,7 @@ function Banner({ banners }) {
         return (
           <Carousel.Item key={index}>
             <img
-              className="d-block w-100 h-100 carousel-img-item"
+              className="d-block w-100 banner-img"
               src={banner.img}
               alt={`slide ke-${index}`}
             />

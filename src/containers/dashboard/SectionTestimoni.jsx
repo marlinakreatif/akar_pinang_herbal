@@ -28,13 +28,12 @@ const renderCarouselItem = (testimoni_comment) => {
     }
   }
 
-  console.log("NEW COLUMN", newColumns);
   return newColumns.map((column, index) => {
     return (
       <Carousel.Item key={index}>
         <div
           className="row justify-content-center"
-          style={{ minHeight: "70vh",padding:"20px 125px" }}
+          style={{ minHeight: "70vh",padding:"20px 125px" , marginTop:"25px"}}
           dangerouslySetInnerHTML={{ __html: column }}
         ></div>
       </Carousel.Item>

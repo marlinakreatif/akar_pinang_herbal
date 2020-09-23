@@ -21,11 +21,9 @@ function Products({ products }) {
                 </div>
                 <div className="right ">
                   <div className="card">
-                    <div className="card-header">
-                      <h3>{product.productName}</h3>
-                    </div>
+                    <div className="card-header">{product.productName}</div>
                     <div className="card-body">
-                      <p>{product.description}</p>
+                      {product.description}
                     </div>
                     <div className="card-footer">
                       <Button variant="light" className="btn-main" size="sm">
